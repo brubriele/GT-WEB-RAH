@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #27BC; }
+
+header {
+  /*   height: 100px; */
+  /*   grid-column-start: 1; */
+  /*   grid-column-end: 3; */
+  /*   grid-column: 1/3 */
+  grid-area: h; }
+
+main {
+  /*   height: 100px; */
+  background: pink;
+  grid-area: m; }
+
+footer {
+  /*   height: 100px; */
+  background: #42C;
+  grid-area: f; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+  grid-template-areas: "h h" "m m" "f f"; }
