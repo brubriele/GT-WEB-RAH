@@ -1,0 +1,13 @@
+@import 'src/clientlib-base/dependencies';
+
+header {
+    color: black;
+    background-color: #1192d3;
+    height: 100%;
+}
+
+h1 {
+    font-family: $header-font;
+    text-align:left;
+    width: 30%;
+}

@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Monofett&display=swap);
+header {
+  color: black;
+  background-color: #1192d3;
+  height: 100%; }
+
+h1 {
+  font-family: "Monofett", cursive;
+  text-align: left;
+  width: 30%; }
