@@ -1,9 +1,14 @@
 @import 'src/clientlib-base/dependencies';
 
 header {
-    color: black;
-    background-color: #FFFF;
-    height: 60%;
+    display: flex;
+    align-items: center;
+    color: $white;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: $bg-red-primary;
+    height: 15%;
     padding: 0px 20px;
 }
 
