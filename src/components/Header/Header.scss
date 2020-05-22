@@ -1,23 +1,64 @@
 @import 'src/clientlib-base/dependencies';
 
-header {
-    display: flex;
-    align-items: center;
-    color: $white;
+
+.header {
     position: fixed;
     width: 100%;
     height: auto;
-    background-color: $bg-red-primary;
+    background-color: $white;
     height: 15%;
     padding: 0px 20px;
-}
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        align-items: center;
+
+        @include mq-max(xs) {
+            width: 88%;
+        }
 
 
-h1 {
-    font-family: $header-font;
-    text-align: left;
-    width: 65%;
-    line-height: 1.3rem;
-    font-size: 1.3rem;
-    font-weight: 100;
+        img {
+            width: 9%;
+
+            @include mq-max(xs) {
+                width: 30%;
+            }
+        }
+
+
+    }
+
+    &__donation {
+        background-color: #EBEFF3;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        padding: 16px 18px;
+        padding: 3px 24px;
+        font-family: "Bebas Neue", cursive;
+
+        .fa-heart {
+            color: $bg-red-primary;
+            margin-right: 5px;
+        }
+    }
+
+    &_donation--description {
+        @include mq-max(xs) {
+            display: none;
+        }
+    }
+
+    &__group-donation-and-menu {
+        display: flex;
+        width: 20%;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+
+
 }

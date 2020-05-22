@@ -1,14 +1,29 @@
 import React from 'react';
 import './Header.css';
 import Menu from '../Menu/Menu'
+import Logo from '../../assets/logo-rah.png'
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
     return (
         <>
-        <header>
-            <h1>Rede de apoio <span>humanitário</span> nas e das periferias</h1>
-            <Menu />
-        </header>
+            <header className="header">
+                <nav>
+                    <img src={Logo} alt="" srcset="" />
+                    <div className="header__group-donation-and-menu">
+                        <div className="header__donation">
+                            <FontAwesomeIcon icon={faHeart} />
+                            <p className="header_donation header_donation--description">como ajudar</p>
+
+                        </div>
+                        <Menu />
+
+                    </div>
+
+                </nav>
+                {/* <Menu /> */}
+            </header>
         </>
     )
 };

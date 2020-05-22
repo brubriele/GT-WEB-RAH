@@ -1,17 +1,17 @@
 import React from 'react';
+import Hamburger from './Hamburger/Hamburger'
 // import './Menu.css';
 
 const Menu = () => {
-    return (   
+  return (
 
-  <div id="parent">
-        <h1>menu</h1>
-
-        <div class="menu-wrapper">
-  <div class="hamburger-menu"></div>	  
-</div>
+    <div id="parent">
+      <div class="menu-wrapper">
+        <div class="hamburger-menu"></div>
+        <Hamburger />
       </div>
-    )
+    </div>
+  )
 }
 
 export default Menu;
