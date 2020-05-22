@@ -15,7 +15,6 @@ const Header = () => {
                         <div className="header__donation">
                             <FontAwesomeIcon icon={faHeart} />
                             <p className="header_donation header_donation--description">como ajudar</p>
-
                         </div>
                         <Menu />
 

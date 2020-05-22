@@ -1,5 +1,6 @@
 import React from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
+// import MenuNav from '../MenuNav/Menu.index../MenuNav/Menu.styled'
 
 export default class MyComponent extends React.Component {
 
@@ -12,6 +13,7 @@ export default class MyComponent extends React.Component {
         this.setState({
             open: !this.state.open
         });
+        console.log('O link foi clicado.');
     }
 
     render() {

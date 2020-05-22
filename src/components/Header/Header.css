@@ -5,7 +5,8 @@
   height: auto;
   background-color: white;
   height: 15%;
-  padding: 0px 20px; }
+  padding: 0px 20px;
+  z-index: 99; }
   .header nav {
     display: flex;
     justify-content: space-between;

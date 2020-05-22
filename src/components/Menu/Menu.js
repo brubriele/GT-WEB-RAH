@@ -6,9 +6,10 @@ const Menu = () => {
   return (
 
     <div id="parent">
-      <div class="menu-wrapper">
-        <div class="hamburger-menu"></div>
-        <Hamburger />
+      <div className="menu-wrapper">
+        <div className="hamburger-menu">
+          <Hamburger />
+        </div>
       </div>
     </div>
   )
