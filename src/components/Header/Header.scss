@@ -10,7 +10,11 @@
     padding: 0px 20px;
     z-index: 99;
 
-    nav {
+    @include mq-max (xs) {
+        height: 12%;
+    }
+
+    &__navigation-top {
         display: flex;
         justify-content: space-between;
         width: 95%;
@@ -39,11 +43,25 @@
         border-radius: 50px;
         padding: 16px 18px;
         padding: 3px 24px;
-        font-family: "Bebas Neue", cursive;
+        font-family: $header-font;
+
+        @include mq-max(xs) {
+            padding: 15px 24px;
+            margin-right: 20px;
+        }
 
         .fa-heart {
             color: $bg-red-primary;
             margin-right: 5px;
+            animation: pulse 2.75s infinite;
+            border-radius: 95%;
+
+
+            @include mq-max(xs) {
+                margin-right: 0px;
+                font-size: 1.2em;
+
+            }
         }
     }
 
@@ -58,8 +76,38 @@
         width: 20%;
         align-items: baseline;
         justify-content: space-around;
+
+        @include mq-max (xs) {
+            width: 45%;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
 
 
 
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 #ffd3d7, 0 0 0 0 #ff6d6d;
+        -webkit-box-shadow: 0 0 0 0 #ffd3dc, 0 0 0 0 #ff6d74;
+        box-shadow: 0 0 0 0 #ffd3da, 0 0 0 0 #ff6d85;
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 100px rgba(211, 246, 255, 0), 0 0 0 101px rgba(109, 203, 255, 0);
+        -webkit-box-shadow: 0 0 0 100px rgba(211, 246, 255, 0), 0 0 0 101px rgba(109, 203, 255, 0);
+        box-shadow: 0 0 0 50px rgba(211, 246, 255, 0), 0 0 0 50px rgba(109, 203, 255, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 100px rgba(211, 246, 255, 0), 0 0 0 101px rgba(109, 203, 255, 0);
+        -webkit-box-shadow: 0 0 0 100px rgba(211, 246, 255, 0), 0 0 0 101px rgba(109, 203, 255, 0);
+        box-shadow: 0 0 0 50px rgba(211, 246, 255, 0), 0 0 0 50px rgba(109, 203, 255, 0);
+    }
 }

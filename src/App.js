@@ -1,10 +1,11 @@
 import React from 'react';
-import Home from './screens/Home';
-import Detail from './screens/Detail';
+// import Home from './screens/Home';
+// import Detail from './screens/Detail';
 import Header from './components/Header/Header';
-import MenuNav from './components/Menu/MenuNav/Menu.index';
+
 import './App.css';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+
 
 const App = () => {
     return (
@@ -12,18 +13,17 @@ const App = () => {
             <div className="container">
                 <Header />
             </div>
-            <MenuNav />
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/detail">Detail</Link></li>
+                <li><Link to="/">...</Link></li>
+                <li><Link to="/detail">...</Link></li>
             </ul>
             <Switch>
                 <Route path="/" exact>
-                    <Home />
+                    {/* <Home /> */}
                 </Route>
 
                 <Route path="/detail">
-                    <Detail />
+                    {/* <Detail /> */}
                 </Route>
 
             </Switch>

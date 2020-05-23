@@ -1,55 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-body {
-  background: #F44336; }
-
-.menu-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100px;
-  height: 60px;
-  cursor: pointer; }
-
-.hamburger-menu,
-.hamburger-menu:after,
-.hamburger-menu:before {
-  width: 100px;
-  height: 10px; }
-
-.hamburger-menu {
+.menu-button {
   position: relative;
-  transform: translateY(25px);
-  background: white;
-  transition: all 0ms 300ms; }
+  font-size: 2em;
+  z-index: 999; }
 
-.hamburger-menu.animate {
-  background: rgba(255, 255, 255, 0); }
+.hide {
+  transform: translatex(100%); }
 
-.hamburger-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 25px;
-  background: white;
-  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-
-.hamburger-menu:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 25px;
-  background: white;
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
-
-.hamburger-menu.animate:after {
+.menu-navigation__items {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
   top: 0;
-  transform: rotate(45deg);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 8%;
+  transition: 1.5s;
+  margin: 0px;
+  list-style: none;
+  background-color: #fff;
+  width: 99vw; }
 
-.hamburger-menu.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+.menu-navigation__list {
+  padding-top: 8%;
+  list-style: none;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.menu-navigation__link {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  color: black;
+  display: inline;
+  padding: 0px 16px; }
+
+.container-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
