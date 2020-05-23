@@ -20,7 +20,7 @@ const Menu = () => {
     return (
         <>
             <div className="container-menu">
-                <div className="menu-button" onClick={toggle}>
+                <div className={`menu-button ${state ? 'close-rotate' : 'open-animation'}`} onClick={toggle}>
                     <FontAwesomeIcon icon={state ? faTimes : faBars} />
                 </div>
                 {/* Sidebar */}

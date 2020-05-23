@@ -17,7 +17,7 @@ const Header = () => {
                             <a href={'https://benfeitoria.com/rededeapoiohumanitario'} target="blank">
                                 <div className="header__donation">
                                     <FontAwesomeIcon icon={faHeart} />
-                                    <p className="header_donation header_donation--description">como ajudar</p>
+                                    <p className="header_donation header_donation--description">Doações</p>
                                 </div>
                             </a>
                         </div>
