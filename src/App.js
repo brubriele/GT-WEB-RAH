@@ -9,7 +9,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 const App = () => {
     return (
-        <BrowserRouter basename="/GT-WEB-RAH">
+        <BrowserRouter>
             <div className="container">
                 <Header />
             </div>
