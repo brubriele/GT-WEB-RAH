@@ -1,26 +1,26 @@
-# RAH - Rede de Apoio das e nas Periferias
+# RAH - Support Network of and in the Peripheries
 
-## Quem é a RAH?
+## Who is RAH?
 
-A Rede de Apoio Humanitário (RAH) é uma iniciativa dos movimentos negros e periféricos do munícipio de São Paulo para realizar ações emergências de forma conjunta e organizada. O objetivo é somar ao movimento de minimização de impactos negativos ocasionados pela pandemia do novo coronavírus.
-O desejo da rede é atender as necessidades básicas de sobrevivência das famílias periféricas que se encontram em dificuldades financeiras nesse período de crise sanitária, tais como: Alimentação e Higiene Pessoal.
+The Humanitarian Support Network (RAH) is an initiative of black and peripheral movements in the municipality of São Paulo to carry out emergency actions in a joint and organized manner. The objective is to add to the movement to minimize negative impacts caused by the pandemic of the new coronavirus.
+The network's desire is to meet the basic survival needs of peripheral families that are in financial difficulties in this period of health crisis, such as: Food and Personal Hygiene.
 
-As ações principais da rede são:
+The main actions of the network are:
 
--  Identificar as famílias mais vulneráveis;
--  Mapear os Pontos de Entrega de doações;
--  Articulação em rede; e
--  Criar estratégias de distribuição dos alimentos e dos produtos de higiene pessoal.
+- Identify the most vulnerable families;
+- Map the donation delivery points;
+- Network articulation; and
+- Create strategies for the distribution of food and personal hygiene products.
 
-Com isso a rede consegue realizar o propósito dessa organização, que nasceu para conectar a pessoa doadora com pessoa que precisa receber a doação.
+With this, the network is able to fulfill the purpose of this organization, which was born to connect the donor with the person who needs to receive the donation.
 
-Link para Campanha atual da Rede de Apoio:
+Link to current Support Network campaign:
 https://benfeitoria.com/rededeapoiohumanitario
 
 <details>
-  <summary>ORGANIZAÇÕES PARCEIRAS</summary>
-  
-  ## ORGANIZAÇÕES PARCEIRAS
+  <summary> PARTNER ORGANIZATIONS </summary>
+  
+  ## PARTNER ORGANIZATIONS
 1. Periferia é o Centro
 2. Frente Favela Brasil
 3. Rede Geração Solidária
@@ -33,10 +33,11 @@ https://benfeitoria.com/rededeapoiohumanitario
 
 </details>
 
+
 <details>
-  <summary>POLOS PARCEIROS</summary>
-  
-  ## POLOS PARCEIROS
+  <summary> PARTNER POLES </summary>
+  
+  ## PARTNER POLES
 1. . Escola de País do Brasil
 2. Associação de Melhoramentos do Sítio de Campo
 3. Sociedade de Melhoramentos do Monte Serrat
@@ -111,7 +112,7 @@ https://benfeitoria.com/rededeapoiohumanitario
 </details>
 
 
-### QUANTIDADE DE CESTAS JÁ ENTREGUES POR REGIÃO
+### AMOUNT OF FOOD KITS ALREADY DELIVERED BY REGION
 
 - ZONA LESTE: 71
 - ZONA NORTE: 72
@@ -121,44 +122,45 @@ https://benfeitoria.com/rededeapoiohumanitario
 - GUARULHOS: 30
 - IBITINGA: 30
 
-TOTAL: 375 CESTAS BÁSICAS ENTREGUES
-Dados atualizados em: Maio/2020.
+TOTAL: 375 FOOD KITS <br>
+Updated on: May / 2020.
 
 ## GT-WEB-RAH
 
-Projeto de desenvolvimento de aplicativo Web responsivo da Rede de Apoio nas e das Periferias.
+Responsive Web application development project of the Support Network in and of the Peripheries of São Paulo.
 
-## 🔨 Como colaborar no desenvolvimento
 
-Esse é um projeto open-source, mas gerenciado pelo Grupo de Tecnologia e Geoprocessamento da Rede (GT-TEC). Qualquer pessoa pode contribuir com código, revisões ou ideias para finalizarmos o projeto.
+## 🔨 How to collaborate in development
 
-## ➡️ Copiar o projeto 
-Faça o fork do projeto para o seu repositório e clone o projeto em sua máquina.
+This is an open-source project, but managed by the Network Technology and Geoprocessing Group (GT-TEC). Anyone can contribute code, reviews or ideas to finalize the project.
 
-## 📦 Instalar dependências
+## ➡️ Copy the project
+Fork the project into your repository and clone the project on your machine.
+
+## 📦 Install dependencies
 - `npm install`
 
-## 💻 Rodar o projeto
+## 💻 Run the project
 - `npm start`
 
-## 💡 Contribuindo
-Caso tenha implementado novas features ou correções, submeta um novo Pull Request do seu repositório fork para o origin.
+## 💡 Contributing
+If you have implemented new features or fixes, submit a new Pull Request from your fork repository to origin.
 
-## 📍 Sugestões
-Caso tenha alguma sugestão de melhoria ou dúvida sobre o projeto, abra diretamente um novo Pull Request.
+## 📍 Suggestions
+If you have any suggestions for improvement or questions about the project, directly open a new Pull Request.
 
-## ✅ roadmap oficial do projeto
+## ✅ official project roadmap
 
-#### versão 3.0.0 (sem previsão, aceita-se contribuições)
-- adicionar dados dinamicos de doações ao website;
-- implementação de plataforma de gestão interna;
-- ferramenta match de itens entre doador x receptor.
+#### version 3.0.0 (without provision, contributions are accepted)
+- add dynamic donation data to the website;
+- implementation of an internal management platform;
+- item matching tool between donor x recipient.
 
-#### versão 2.0.0 (previsão junho/2020)
-- implementação de novas seções na página (Cadastro de Pólos, Doadores e Receptores);
-- implementação de footer com informações de direitos e contatos da Rede de Apoio;
+#### version 2.0.0 (forecast June / 2020)
+- implementation of new sections on the page (Register of Poles, Donors and Receivers);
+- implementation of footer with rights information and support network contacts;
 
-#### versão 1.0.0 (released)
-- funcionalidades: página estática com link para redes sociais e campanha de benfeitoria da Rede de Apoio;
-- ajustes: media queries para layout responsivo;
+#### version 1.0.0 (released)
+- functionalities: static page with link to social networks and improvement campaign for the Support Network;
+- adjustments: media queries for responsive layout;
 - README translated to english;
