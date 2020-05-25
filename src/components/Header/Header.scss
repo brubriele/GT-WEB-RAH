@@ -10,8 +10,8 @@
     padding: 0px 20px;
     z-index: 99;
 
-    @include mq-max (xs) {
-        height: 12%;
+    @include mq-max (sm) {
+        height: auto;
     }
 
     &__navigation-top {
@@ -20,7 +20,7 @@
         width: 95%;
         align-items: center;
 
-        @include mq-max(xs) {
+        @include mq-max(sm) {
             width: 88%;
         }
 
@@ -28,7 +28,7 @@
         img {
             width: 9%;
 
-            @include mq-max(xs) {
+            @include mq-max(sm) {
                 width: 30%;
             }
         }
@@ -45,7 +45,7 @@
         padding: 3px 24px;
         font-family: $header-font;
 
-        @include mq-max(xs) {
+        @include mq-max(sm) {
             padding: 15px 24px;
             margin-right: 20px;
         }
@@ -58,7 +58,7 @@
             animation: heartbeat 1.5s ease-in-out infinite both;
 
 
-            @include mq-max(xs) {
+            @include mq-max(sm) {
                 margin-right: 0px;
                 font-size: 1.2em;
 
@@ -67,7 +67,7 @@
     }
 
     &_donation--description {
-        @include mq-max(xs) {
+        @include mq-max(sm) {
             display: none;
         }
     }
@@ -78,7 +78,7 @@
         align-items: baseline;
         justify-content: space-around;
 
-        @include mq-max (xs) {
+        @include mq-max (sm) {
             width: 45%;
 
         }

@@ -47,6 +47,11 @@
         list-style: none;
         background-color: #fff;
         width: 99vw;
+
+        @include mq-max(sm) {
+            padding-top: 20%;
+        }
+
     }
 
     &__list {
