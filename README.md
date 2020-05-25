@@ -8,7 +8,7 @@ O desejo da rede é atender as necessidades básicas de sobrevivência das famí
 As ações principais da rede são:
 
 -  Identificar as famílias mais vulneráveis;
--  Mapear os Pontos de Entrega de doações;
+-  Mapear os pontos de entrega de doações;
 -  Articulação em rede; e
 -  Criar estratégias de distribuição dos alimentos e dos produtos de higiene pessoal.
 
@@ -17,6 +17,8 @@ Com isso a rede consegue realizar o propósito dessa organização, que nasceu p
 Link para Campanha atual da Rede de Apoio:
 https://benfeitoria.com/rededeapoiohumanitario
 
+
+*Read this in English: [README English](README.en.md)*
 <details>
   <summary>ORGANIZAÇÕES PARCEIRAS</summary>
   
