@@ -3,7 +3,7 @@ import {doGet} from '../../helpers/ApiHelper'
 
 
 const Home = () => {
-    doGet('/catalog/reports?color_slug=tapecaria').then(console.log)
+    doGet('').then(console.log)
 
     return <h1>Home</h1>
 }
