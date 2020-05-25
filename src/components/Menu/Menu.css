@@ -29,6 +29,9 @@
   list-style: none;
   background-color: #fff;
   width: 99vw; }
+  @media (max-width: 576px) {
+    .menu-navigation__items {
+      padding-top: 20%; } }
 
 .menu-navigation__list {
   padding-top: 8%;
