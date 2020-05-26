@@ -1,29 +1,27 @@
 import React from 'react';
 import './Header.css';
 import Logo from '../../assets/logo-rah.png'
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Menu from '../Menu/Menu'
+import ButtonDonation from '../ButtonDonation/ButtonDonation'
 
 const Header = () => {
     return (
         <>
             <header className="header">
                 <nav className="header__navigation-top">
-                    <img src={Logo} alt="" srcset="" />
+                    <h1>
+                        <img src={Logo} alt="" srcset="" />
 
+                    </h1>
                     <section className="header__group-donation-and-menu">
-                        <div>
-                            <a href={'https://benfeitoria.com/rededeapoiohumanitario'} target="blank">
-                                <div className="header__donation">
-                                    <FontAwesomeIcon icon={faHeart} />
-                                    <p className="header_donation header_donation--description">Doações</p>
-                                </div>
-                            </a>
-                        </div>
-                        <Menu />
 
+                        <a className="header__button" href={'https://benfeitoria.com/rededeapoiohumanitario'}>Quem é a RAH</a>
+                        <a className="header__button header__button--donation" href={'https://benfeitoria.com/rededeapoiohumanitario'} target="blank">
+                            <ButtonDonation />
+                        </a>
+                        <a className="header__button" href={'https://benfeitoria.com/rededeapoiohumanitario'}>Polos</a>
                     </section>
+                    <Menu />
                 </nav>
             </header>
         </>

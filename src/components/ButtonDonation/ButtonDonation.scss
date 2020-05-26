@@ -1,0 +1,42 @@
+@import 'src/clientlib-base/dependencies';
+
+.btn__donation {
+    background-color: #EBEFF3;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 16px 18px;
+    padding: 3px 24px;
+    font-family: $header-font;
+
+    @include mq-max(sm) {
+        padding: 15px 24px;
+        margin-right: 20px;
+    }
+
+    .fa-heart {
+        color: $bg-red-primary;
+        opacity: 0.6;
+        margin-right: 5px;
+        border-radius: 95%;
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+
+        &:hover {
+            opacity: initial;
+        }
+
+
+        @include mq-max(sm) {
+            margin-right: 0px;
+            font-size: 1.2em;
+
+        }
+    }
+}
+
+.btn_donation--description {
+    @include mq-max(sm) {
+        display: none;
+    }
+}

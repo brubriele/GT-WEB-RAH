@@ -2,10 +2,14 @@
 
 
 .header {
+    display: flex;
     position: fixed;
     width: 100%;
     height: auto;
     background-color: $white;
+    font-family: $header-font;
+    font-weight: 400;
+    font-size: 17px;
     height: 15%;
     padding: 0px 20px;
     z-index: 99;
@@ -24,62 +28,55 @@
             width: 88%;
         }
 
+        h1 {
+            width: 40%;
+        }
 
         img {
-            width: 9%;
+            width: 40%;
 
             @include mq-max(sm) {
-                width: 30%;
+                width: 50%;
+                padding: 4% 4% 4% 0%;
+            }
+
+            @include mq-min(xl) {
+                margin-right: 35%;
             }
         }
 
 
     }
 
-    &__donation {
-        background-color: #EBEFF3;
+    &__button:not(.header__button--donation) {
         display: flex;
-        align-items: center;
-        border-radius: 50px;
-        padding: 16px 18px;
-        padding: 3px 24px;
-        font-family: $header-font;
+        justify-content: center;
+        padding: 7.6%;
+        width: 16%;
+        border-top: 4px solid transparent;
 
-        @include mq-max(sm) {
-            padding: 15px 24px;
-            margin-right: 20px;
+        &:hover {
+            border-top: 4px solid #ED1C24;
+            transition: 0.9s;
         }
 
-        .fa-heart {
-            color: $bg-red-primary;
-            margin-right: 5px;
-            border-radius: 95%;
-            -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-            animation: heartbeat 1.5s ease-in-out infinite both;
-
-
-            @include mq-max(sm) {
-                margin-right: 0px;
-                font-size: 1.2em;
-
-            }
+        @include mq-min (xxl) {
+            padding: 10.2%;
         }
+
+
     }
 
-    &_donation--description {
-        @include mq-max(sm) {
-            display: none;
-        }
-    }
+
 
     &__group-donation-and-menu {
         display: flex;
-        width: 20%;
+        width: 35%;
         align-items: baseline;
-        justify-content: space-around;
+        justify-content: space-between;
 
         @include mq-max (sm) {
-            width: 45%;
+            width: 20%;
 
         }
 
@@ -107,8 +104,8 @@
  */
 @-webkit-keyframes heartbeat {
     from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+        -webkit-transform: scale(3);
+        transform: scale(3);
         -webkit-transform-origin: center center;
         transform-origin: center center;
         -webkit-animation-timing-function: ease-out;
