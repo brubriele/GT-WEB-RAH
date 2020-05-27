@@ -2,32 +2,54 @@ import React from 'react';
 import './Header.css';
 import Logo from '../../assets/logo-rah.png'
 import Menu from '../Menu/Menu'
-import ButtonDonation from '../ButtonDonation/ButtonDonation'
+import ButtonDonation from '../ButtonDonation/ButtonDonation';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import Sobre from '../../screens/Sobre/index'
+import Polos from '../../screens/Polos/index';
+import Home from '../../screens/Home/index'
 
 const Header = () => {
     return (
-        <>
-            <header className="header">
-                <nav className="header__navigation-top">
-                    <h1>
-                        <img src={Logo} alt="" srcset="" />
+        <BrowserRouter>
+            <>
+                <header className="header">
+                    <nav className="header__navigation-top">
+                        <h1>
+                            <Link to="/home">
 
-                    </h1>
-                    <section className="header__group-donation-and-menu">
+                                <img src={Logo} alt="" srcset="" />
+                            </Link>
 
-                        <a className="header__button" href={'https://benfeitoria.com/rededeapoiohumanitario'}>Quem é a RAH</a>
-                        <a className="header__button header__button--donation" href={'https://benfeitoria.com/rededeapoiohumanitario'} target="blank">
-                            <ButtonDonation />
-                        </a>
-                        <a className="header__button" href={'https://benfeitoria.com/rededeapoiohumanitario'}>Polos</a>
-                    </section>
-                    <Menu />
-                </nav>
-            </header>
-        </>
+                        </h1>
+                        <section className="header__group-donation-and-menu">
+
+                            <Link to="/sobre" className="header__button" >Quem é a RAH</Link>
+                            <a className="header__button header__button--donation" href={'https://benfeitoria.com/rededeapoiohumanitario'} target="blank">
+                                <ButtonDonation />
+                            </a>
+                            <Link to="/polos" className="header__button" >Polos</Link>
+                        </section>
+                        <Menu />
+                    </nav>
+                </header>
+            </>
+            <Switch>
+                <Route path="/home" exact>
+                    <Home />
+                </Route>
+                <Route path="/sobre" exact>
+                    <Sobre />
+                </Route>
+                <Route path="/polos" exact>
+                    <Polos />
+                </Route>
+            </Switch>
+        </BrowserRouter>
 
     )
 
 };
+
+
 
 export default Header;
