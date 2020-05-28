@@ -1,35 +1,54 @@
 import React from 'react';
 import './Header.css';
 import Logo from '../../assets/logo-rah.png'
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Menu from '../Menu/Menu'
+import ButtonDonation from '../ButtonDonation/ButtonDonation';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import Sobre from '../../screens/Sobre/index'
+import Polos from '../../screens/Polos/index';
+import Home from '../../screens/Home/index'
 
 const Header = () => {
     return (
-        <>
-            <header className="header">
-                <nav className="header__navigation-top">
-                    <img src={Logo} alt="" srcset="" />
+        <BrowserRouter>
+            <>
+                <header className="header">
+                    <nav className="header__navigation-top">
+                        <h1>
+                            <Link to="/">
+                                <img src={Logo} alt="" srcset="" />
+                            </Link>
 
-                    <section className="header__group-donation-and-menu">
-                        <div>
-                            <a href={'https://benfeitoria.com/rededeapoiohumanitario'} target="blank">
-                                <div className="header__donation">
-                                    <FontAwesomeIcon icon={faHeart} />
-                                    <p className="header_donation header_donation--description">Doações</p>
-                                </div>
+                        </h1>
+                        <section className="header__group-donation-and-menu">
+
+                            <Link to="/sobre" className="header__button" >Quem é a RAH</Link>
+                            <a className="header__button header__button--donation" href={'https://benfeitoria.com/rededeapoiohumanitario'} target="blank">
+                                <ButtonDonation />
                             </a>
-                        </div>
+                            <Link to="/polos" className="header__button" >Polos</Link>
+                        </section>
                         <Menu />
-
-                    </section>
-                </nav>
-            </header>
-        </>
+                    </nav>
+                </header>
+            </>
+            <Switch>
+                <Route path="/" exact>
+                    <Home />
+                </Route>
+                <Route path="/sobre" exact>
+                    <Sobre />
+                </Route>
+                <Route path="/polos" exact>
+                    <Polos />
+                </Route>
+            </Switch>
+        </BrowserRouter>
 
     )
 
 };
+
+
 
 export default Header;

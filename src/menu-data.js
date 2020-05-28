@@ -1,7 +1,11 @@
+import Sobre from './screens/Sobre/index';
+
 export const menuData = [
     {
         label: 'Quem é a RAH?',
-        url: 'https://web.facebook.com/redeapoiohumanitario/'
+        url: '/sobre',
+        component: Sobre,
+        exact: true
     },
     {
         label: 'Doações',
