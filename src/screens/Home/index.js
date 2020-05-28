@@ -1,11 +1,19 @@
 import React from 'react';
-import {doGet} from '../../helpers/ApiHelper'
+import MainBanner from '../../components/MainBanner/MainBanner'
+import { doGet } from '../../helpers/ApiHelper'
+import '../../App.css'
 
 
 const Home = () => {
     doGet('').then(console.log)
 
-    return <h1>Home</h1>
+    return (
+        <>
+            <main>
+                <MainBanner />
+            </main>
+        </>
+    )
 }
 
 export default Home;

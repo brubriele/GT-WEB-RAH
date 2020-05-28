@@ -2,24 +2,19 @@
 
 .menu-button {
     position: relative;
-    font-size: 2em;
+    font-size: 1.7em;
     z-index: 999;
-
-
-
 }
 
 .open-animation {
     &:hover {
         -webkit-animation: text-shadow-pop-right 0.6s both;
         animation: text-shadow-pop-right 0.6s both;
-
     }
 }
 
 .close-rotate {
     &:hover {
-
         -webkit-animation: rotate-center 0.6s ease-in-out both;
         animation: rotate-center 0.6s ease-in-out both;
     }
