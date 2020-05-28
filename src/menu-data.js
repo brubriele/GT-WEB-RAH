@@ -1,11 +1,7 @@
-import Sobre from './screens/Sobre/index';
-
 export const menuData = [
     {
         label: 'Quem é a RAH?',
-        url: '/sobre',
-        component: Sobre,
-        exact: true
+        url: 'https://web-apoiohumanitario.web.app/sobre'
     },
     {
         label: 'Doações',

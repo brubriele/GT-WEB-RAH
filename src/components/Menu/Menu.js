@@ -23,7 +23,6 @@ const Menu = () => {
                 <div className={`menu-button ${state ? 'close-rotate' : 'open-animation'}`} onClick={toggle}>
                     <FontAwesomeIcon icon={state ? faTimes : faBars} />
                 </div>
-                {/* Sidebar */}
                 {menuData.length && (
                     <nav id="mySidenav" className="menu-navigation">
                         <ul className={`menu-navigation__items ${state ? 'show' : 'hide'}`}>
