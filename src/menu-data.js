@@ -1,7 +1,7 @@
 export const menuData = [
     {
         label: 'Quem é a RAH?',
-        url: 'https://web-apoiohumanitario.web.app/sobre'
+        url: 'https://web.facebook.com/redeapoiohumanitario/'
     },
     {
         label: 'Doações',
