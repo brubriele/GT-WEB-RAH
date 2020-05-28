@@ -38,6 +38,7 @@
 
         img {
             width: 40%;
+            margin-top: 5%;
 
             @include mq-max(sm) {
                 width: 100%;
@@ -55,7 +56,7 @@
     &__button:not(.header__button--donation) {
         display: flex;
         justify-content: center;
-        padding: 7.6%;
+        padding: 5.3%;
         width: 16%;
         border-top: 4px solid transparent;
 
@@ -69,7 +70,7 @@
         }
 
         @include mq-min (xxl) {
-            padding: 8%;
+            padding: 4.7%;
         }
 
 
@@ -79,7 +80,7 @@
 
     &__group-donation-and-menu {
         display: flex;
-        width: 35%;
+        width: 50%;
         align-items: baseline;
         justify-content: space-between;
 

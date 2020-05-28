@@ -1,14 +1,18 @@
 import React from 'react';
+import MainBanner from '../../components/MainBanner/MainBanner'
 import { doGet } from '../../helpers/ApiHelper'
+import '../../App.css'
 
 
 const Home = () => {
     doGet('').then(console.log)
 
     return (
-        <main>
-            <h2>Home</h2>
-        </main>
+        <>
+            <main>
+                <MainBanner />
+            </main>
+        </>
     )
 }
 

@@ -15,8 +15,7 @@ const Header = () => {
                 <header className="header">
                     <nav className="header__navigation-top">
                         <h1>
-                            <Link to="/home">
-
+                            <Link to="/">
                                 <img src={Logo} alt="" srcset="" />
                             </Link>
 
@@ -34,7 +33,7 @@ const Header = () => {
                 </header>
             </>
             <Switch>
-                <Route path="/home" exact>
+                <Route path="/" exact>
                     <Home />
                 </Route>
                 <Route path="/sobre" exact>

@@ -7,7 +7,7 @@ const ButtonDonation = () => {
     return (
         <div className="btn__donation">
             <FontAwesomeIcon icon={faHeart} />
-            <p className="btn_donation btn_donation--description">Doações</p>
+            <p className="btn_donation btn_donation--description">Quero ajudar</p>
         </div>
     )
 }

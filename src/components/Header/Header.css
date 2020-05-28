@@ -28,7 +28,8 @@
         .header__navigation-top h1 {
           width: 50%; } }
     .header__navigation-top img {
-      width: 40%; }
+      width: 40%;
+      margin-top: 5%; }
       @media (max-width: 576px) {
         .header__navigation-top img {
           width: 100%;
@@ -39,7 +40,7 @@
   .header__button:not(.header__button--donation) {
     display: flex;
     justify-content: center;
-    padding: 7.6%;
+    padding: 5.3%;
     width: 16%;
     border-top: 4px solid transparent; }
     .header__button:not(.header__button--donation):hover {
@@ -50,10 +51,10 @@
         display: none; } }
     @media (min-width: 1440px) {
       .header__button:not(.header__button--donation) {
-        padding: 8%; } }
+        padding: 4.7%; } }
   .header__group-donation-and-menu {
     display: flex;
-    width: 35%;
+    width: 50%;
     align-items: baseline;
     justify-content: space-between; }
     @media (max-width: 576px) {
